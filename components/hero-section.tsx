@@ -41,11 +41,13 @@ export function HeroSection({ onApplyClick }: HeroSectionProps) {
   </span>
 </h1>
 
-<p className="mx-auto mt-4 max-w-2xl text-sm leading-6 text-[#6F6A66] md:mt-5 md:max-w-3xl md:text-lg md:leading-8">            Even if you currently feel confused about financial literacy, don’t come from a finance background, and have no clear system yet.
+<p className="mx-auto mt-4 max-w-2xl text-sm leading-6 text-[#6F6A66] md:mt-5 md:max-w-3xl md:text-lg md:leading-8">           Even if you feel confused about money and don’t know where to start.
+
           </p>
 
-<p className="mx-auto mt-2 max-w-2xl text-sm leading-6 text-[#6F6A66] md:mt-3 md:max-w-3xl md:text-lg md:leading-8">            Made for ambitious women who want to stop guessing with money and start building real financial confidence inside a supportive community of women learning together.
-          </p>
+<p className="mx-auto mt-2 max-w-2xl text-sm leading-6 text-[#6F6A66] md:mt-3 md:max-w-3xl md:text-lg md:leading-8 md:whitespace-nowrap">
+  This is for women who are ready to build real financial confidence and take control of their future.
+</p>
         </div>
 
         {/* Video */}
