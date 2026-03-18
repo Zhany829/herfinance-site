@@ -21,12 +21,25 @@ export function HeroSection({ onApplyClick }: HeroSectionProps) {
 
       <div className="mx-auto max-w-5xl px-4 pb-12 pt-8 md:px-6 md:pb-16 md:pt-10">
         <div className="text-center">
-          <div className="mb-4 md:mb-6">
-  <p className="font-serif text-2xl tracking-tight md:text-5xl">HerFinance</p>
+         <div className="mb-5 md:mb-7">
+  <div className="inline-flex flex-col items-center">
+    <p className="font-serif text-[2.1rem] leading-none tracking-[-0.04em] text-[#1F1F1F] md:text-[4.6rem]">
+      Her<span className="italic text-[#C9A24E]">Finance</span>
+    </p>
+    <div className="mt-2 h-[2px] w-20 rounded-full bg-[#D8B36A]/70 md:mt-3 md:w-28" />
+  </div>
 </div>
 
-<h1 className="mx-auto max-w-3xl font-serif text-[1.35rem] leading-[1.25] md:max-w-4xl md:text-4xl md:leading-[1.18]">            Learn How To Build Your First $10K–$100K Investment Portfolio With Confidence — Using Proven Wall Street Research Frameworks
-          </h1>
+<h1 className="mx-auto max-w-3xl font-serif text-[1.35rem] leading-[1.25] md:max-w-4xl md:text-4xl md:leading-[1.18]">
+<span className="block whitespace-nowrap">
+  Learn How To Build Your First{" "}
+  <span className="text-[#C9A24E]">$10K–$100K</span> Investment Portfolio
+</span>
+
+  <span className="mt-2 block md:mt-3">
+    Using Proven Wall Street Research Frameworks
+  </span>
+</h1>
 
 <p className="mx-auto mt-4 max-w-2xl text-sm leading-6 text-[#6F6A66] md:mt-5 md:max-w-3xl md:text-lg md:leading-8">            Even if you currently feel confused about financial literacy, don’t come from a finance background, and have no clear system yet.
           </p>
