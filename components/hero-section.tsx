@@ -38,7 +38,7 @@ export function HeroSection({ onApplyClick }: HeroSectionProps) {
   <h1 className="hidden 2xl:block mx-auto max-w-[1700px] font-serif tracking-[-0.01em] text-[#1F1F1F]">
 
     {/* ① 主部分（放大1.6倍） */}
-    <span className="font-semibold text-[4.6rem] leading-[1.08]">
+    <span className="font-semibold text-[3.2rem] leading-[1.08]">
       Learn How To Build Your First{" "}
       <span className="text-[#C9A24E] whitespace-nowrap">$10K–$100K</span>{" "}
       Investment Portfolio
@@ -55,7 +55,7 @@ export function HeroSection({ onApplyClick }: HeroSectionProps) {
   <h1 className="2xl:hidden mx-auto max-w-[1400px] font-serif tracking-[-0.01em] text-[#1F1F1F]">
 
     {/* ① 主标题 */}
-    <span className="block font-semibold text-[2.5rem] leading-[1.25] md:text-[2.4rem] md:leading-[1.18] xl:text-[2.7rem]">
+    <span className="block font-semibold text-[1.7rem] leading-[1.25] md:text-[2.4rem] md:leading-[1.18] xl:text-[2.7rem]">
       Learn How To Build Your First{" "}
       <span className="text-[#C9A24E] md:whitespace-nowrap">$10K–$100K</span>{" "}
       Investment Portfolio
@@ -87,7 +87,7 @@ export function HeroSection({ onApplyClick }: HeroSectionProps) {
 <div className="mx-auto mt-6 max-w-4xl rounded-[20px] border border-[#EEE7E1] bg-white p-2 shadow-[0_8px_28px_rgba(31,31,31,0.05)] md:mt-8 md:rounded-[24px] md:p-3">
   <div className="relative aspect-video overflow-hidden rounded-[14px] md:rounded-[18px]">
     <iframe
-  src="https://player.vimeo.com/video/1175680425?autoplay=1&muted=0&title=0&byline=0&portrait=0"     className="absolute top-0 left-0 h-full w-full"
+  src="https://player.vimeo.com/video/1175680425?autoplay=1&title=0&byline=0&portrait=0"     className="absolute top-0 left-0 h-full w-full"
       allow="autoplay; fullscreen; picture-in-picture"
       allowFullScreen
     />
