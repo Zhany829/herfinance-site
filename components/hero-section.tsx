@@ -2,12 +2,54 @@
 
 import { Play } from "lucide-react"
 import { Button } from "@/components/ui/button"
-
+import { useEffect } from "react"
 interface HeroSectionProps {
   onApplyClick: () => void
 }
-
+declare global {
+  interface Window {
+    Vimeo?: {
+      Player: new (element: HTMLElement | null) => {
+        setPlaybackRate: (rate: number) => Promise<void>
+      }
+    }
+  }
+}
 export function HeroSection({ onApplyClick }: HeroSectionProps) {
+  useEffect(() => {
+    const existingScript = document.querySelector(
+      'script[src="https://player.vimeo.com/api/player.js"]'
+    ) as HTMLScriptElement | null
+
+    const initPlayer = () => {
+      const iframe = document.getElementById("vimeo-player")
+      if (iframe && window.Vimeo) {
+        const player = new window.Vimeo.Player(iframe)
+        player.setPlaybackRate(1.25).catch(() => {
+          console.log("Vimeo playback rate could not be changed.")
+        })
+      }
+    }
+
+    if (existingScript) {
+      if (window.Vimeo) {
+        initPlayer()
+      } else {
+        existingScript.addEventListener("load", initPlayer, { once: true })
+      }
+      return
+    }
+
+    const script = document.createElement("script")
+    script.src = "https://player.vimeo.com/api/player.js"
+    script.async = true
+    script.onload = initPlayer
+    document.body.appendChild(script)
+
+    return () => {
+      script.onload = null
+    }
+  }, [])
   return (
     <section className="bg-background text-foreground">
       {/* Top Banner */}
@@ -85,14 +127,17 @@ export function HeroSection({ onApplyClick }: HeroSectionProps) {
 
         {/* Video */}
 <div className="mx-auto mt-6 max-w-4xl rounded-[20px] border border-[#EEE7E1] bg-white p-2 shadow-[0_8px_28px_rgba(31,31,31,0.05)] md:mt-8 md:rounded-[24px] md:p-3">
-  <div className="relative aspect-video overflow-hidden rounded-[14px] md:rounded-[18px]">
-    <iframe
-  src="https://player.vimeo.com/video/1175680425?autoplay=1&muted=0&title=0&byline=0&portrait=0"     className="absolute top-0 left-0 h-full w-full"
-      allow="autoplay; fullscreen; picture-in-picture"
-      allowFullScreen
-    />
-  </div>
-</div>
+          <div className="relative aspect-video overflow-hidden rounded-[14px] md:rounded-[18px]">
+            <iframe
+              id="vimeo-player"
+              src="https://player.vimeo.com/video/1175680425?title=0&byline=0&portrait=0"
+              className="absolute left-0 top-0 h-full w-full"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
+              title="HerFinance Intro"
+            />
+          </div>
+        </div>
 
         {/* CTA under video */}
         <div className="mt-7 text-center">
