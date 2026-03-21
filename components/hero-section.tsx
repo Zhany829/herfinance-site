@@ -53,21 +53,25 @@ export function HeroSection({ onApplyClick }: HeroSectionProps) {
             </h1>
           </div>
 
-<p className="mx-auto mt-4 max-w-full whitespace-nowrap text-sm leading-6 text-[#6F6A66] md:mt-5 md:max-w-3xl md:text-lg md:leading-8">
-  Even if you feel confused about money and don’t know where to start.
+<p className="mx-auto mt-4 max-w-2xl text-sm leading-6 text-[#6F6A66] md:mt-5 md:max-w-3xl md:text-lg md:leading-8 md:whitespace-nowrap">
+  Even if you feel confused about money and
+  <br className="block md:hidden" />
+  don’t know where to start.
 </p>
 
-<p className="mx-auto mt-2 max-w-full whitespace-nowrap text-sm leading-6 text-[#6F6A66] md:mt-3 md:text-lg md:leading-8">
-  This is for women who are ready to build real financial confidence and take control of their future.
+<p className="mx-auto mt-2 max-w-2xl text-sm leading-6 text-[#6F6A66] md:mt-3 md:max-w-3xl md:text-lg md:leading-8 md:whitespace-nowrap">
+  This is for women who are ready to build real financial confidence
+  <br className="block md:hidden" />
+  and take control of their future.
 </p>
         </div>
 
         {/* Video */}
-<div className="mx-auto mt-8 max-w-[360px] md:max-w-[420px]">
-  <div className="relative aspect-[9/16] overflow-hidden rounded-[18px]">
+<div className="mx-auto mt-6 max-w-4xl rounded-[20px] border border-[#EEE7E1] bg-white p-2 shadow-[0_8px_28px_rgba(31,31,31,0.05)] md:mt-8 md:rounded-[24px] md:p-3">
+  <div className="relative aspect-video overflow-hidden rounded-[14px] md:rounded-[18px]">
     <iframe
-      src="https://www.youtube.com/embed/J5O4k1ERSAk?rel=0&modestbranding=1"
-      className="h-full w-full"
+  src="https://player.vimeo.com/video/1175680425?autoplay=1&muted=0&title=0&byline=0&portrait=0"     className="absolute top-0 left-0 h-full w-full"
+      allow="autoplay; fullscreen; picture-in-picture"
       allowFullScreen
     />
   </div>
