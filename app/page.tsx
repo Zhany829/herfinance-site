@@ -71,10 +71,10 @@ formData.append(
   formData.append("message", message)
 
   try {
-    // await fetch("https://api.web3forms.com/submit", {
-    //   method: "POST",
-    //   body: formData
-    // })
+    await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    })
   } catch (error) {
     console.error("Email send failed:", error)
   }

@@ -15,7 +15,7 @@ type CalendlyEmbedProps = {
   onScheduled: () => void
 }
 
-const CALENDLY_URL = "https://calendly.com/annie-herfinance/30min"
+const CALENDLY_URL = "https://calendly.com/herfinanceacademyofficial/30min"
 
 export function CalendlyEmbed({
   applicationData,
