@@ -57,8 +57,7 @@ ${data.whyNow}
 <b>What is your budget to INVEST into fast-tracking your financial literacy and financial skill set right now?</b>
 ${data.budget}
 
-<b>Our team operates on a tight schedule. Do you confirm that you will attend this call at the scheduled time?</b>
-${data.attendanceConfirm}
+
 `
 
   const formData = new FormData()
