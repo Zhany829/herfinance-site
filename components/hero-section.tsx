@@ -87,7 +87,7 @@ export function HeroSection({ onApplyClick }: HeroSectionProps) {
 <div className="mx-auto mt-6 max-w-4xl rounded-[20px] border border-[#EEE7E1] bg-white p-2 shadow-[0_8px_28px_rgba(31,31,31,0.05)] md:mt-8 md:rounded-[24px] md:p-3">
   <div className="relative aspect-video overflow-hidden rounded-[14px] md:rounded-[18px]">
     <iframe
-  src="https://player.vimeo.com/video/1175680425?autoplay=1&title=0&byline=0&portrait=0"     className="absolute top-0 left-0 h-full w-full"
+  src="https://player.vimeo.com/video/1175680425?autoplay=1&muted=1&title=0&byline=0&portrait=0"     className="absolute top-0 left-0 h-full w-full"
       allow="autoplay; fullscreen; picture-in-picture"
       allowFullScreen
     />
