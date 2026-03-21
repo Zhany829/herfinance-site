@@ -45,7 +45,7 @@ export function HeroSection({ onApplyClick }: HeroSectionProps) {
     </span>
 
     {/* ② 副部分（保持对比） */}
-    <span className="block mt-4 text-[2.6rem] text-[#2A2A2A]">
+    <span className="block mt-4 text-[2.9rem] text-[#2A2A2A]">
   Using Proven Wall Street Research Frameworks
 </span>
 
@@ -55,14 +55,14 @@ export function HeroSection({ onApplyClick }: HeroSectionProps) {
   <h1 className="2xl:hidden mx-auto max-w-[1400px] font-serif tracking-[-0.01em] text-[#1F1F1F]">
 
     {/* ① 主标题 */}
-    <span className="block font-semibold text-[1.25rem] leading-[1.25] md:text-[2.4rem] md:leading-[1.18] xl:text-[2.7rem]">
+    <span className="block font-semibold text-[2.5rem] leading-[1.25] md:text-[2.4rem] md:leading-[1.18] xl:text-[2.7rem]">
       Learn How To Build Your First{" "}
       <span className="text-[#C9A24E] md:whitespace-nowrap">$10K–$100K</span>{" "}
       Investment Portfolio
     </span>
 
     {/* ② 副标题 */}
-    <span className="block mt-3 md:mt-4 text-[1.05rem] leading-[1.3] md:text-[1.6rem] xl:text-[1.8rem] text-[#2A2A2A]">
+    <span className="block mt-3 md:mt-4 text-[1.5rem] leading-[1.3] md:text-[1.6rem] xl:text-[1.8rem] text-[#2A2A2A]">
       Using Proven Wall Street Research Frameworks
     </span>
 
@@ -71,9 +71,9 @@ export function HeroSection({ onApplyClick }: HeroSectionProps) {
 </div>
 
 <p className="mx-auto mt-4 max-w-2xl text-sm leading-6 text-[#6F6A66] md:mt-5 md:max-w-3xl md:text-lg md:leading-8 md:whitespace-nowrap">
-  Even if you feel confused about money and
+  Even if you feel confused about money and {" "}
   <br className="block md:hidden" />
-  don’t know where to start.
+   don’t know where to start.
 </p>
 
 <p className="mx-auto mt-2 max-w-2xl text-sm leading-6 text-[#6F6A66] md:mt-3 md:max-w-3xl md:text-lg md:leading-8 md:whitespace-nowrap">
