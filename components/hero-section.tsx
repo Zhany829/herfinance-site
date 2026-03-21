@@ -70,16 +70,20 @@ export function HeroSection({ onApplyClick }: HeroSectionProps) {
 
 </div>
 
-<p className="mx-auto mt-4 max-w-2xl text-sm leading-6 text-[#6F6A66] md:mt-5 md:max-w-3xl md:text-lg md:leading-8 md:whitespace-nowrap">
-  Even if you feel confused about money and {" "}
-  <br className="block md:hidden" />
-   don’t know where to start.
-</p>
+<p className="mx-auto mt-4 max-w-2xl text-sm leading-[1.4] text-[#6F6A66] md:mt-5 md:max-w-3xl md:text-lg md:leading-[1.6] text-center">
 
-<p className="mx-auto mt-2 max-w-2xl text-sm leading-6 text-[#6F6A66] md:mt-3 md:max-w-3xl md:text-lg md:leading-8 md:whitespace-nowrap">
-  This is for women who are ready to build
+  Even if you feel confused about money and{" "}
   <br className="block md:hidden" />
-   real financial confidence and take control of their future.
+  don’t know where to start.
+
+  <br className="hidden md:block" />
+
+  <span className="md:whitespace-nowrap">
+    This is for women who are ready to build{" "}
+    <br className="block md:hidden" />
+    real financial confidence and take control of their future.
+  </span>
+
 </p>
         </div>
 
