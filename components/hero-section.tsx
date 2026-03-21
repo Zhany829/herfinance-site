@@ -32,26 +32,43 @@ export function HeroSection({ onApplyClick }: HeroSectionProps) {
           </div>
 
           {/* Headline */}
-          <div className="mt-6 md:mt-8">
-            {/* 超宽屏：单行版本 */}
-            <h1 className="hidden 2xl:block mx-auto max-w-[1700px] font-serif text-[2.65rem] leading-[1.12] tracking-[-0.01em] text-[#1F1F1F]">
-              Learn How To Build Your First{" "}
-              <span className="text-[#C9A24E] md:whitespace-nowrap">$10K–$100K</span>{" "}
-              Investment Portfolio Using Proven Wall Street Research Frameworks
-            </h1>
+         <div className="mt-6 md:mt-8">
 
-            {/* 普通桌面 / 非全屏 / 手机：双行版本 */}
-            <h1 className="2xl:hidden mx-auto max-w-[1400px] font-serif text-[1.2rem] leading-[1.2] tracking-[-0.01em] text-[#1F1F1F] md:text-[2.2rem] md:leading-[1.16] xl:text-[2.45rem]">
-              <span className="block">
-                Learn How To Build Your First{" "}
-                <span className="text-[#C9A24E] md:whitespace-nowrap">$10K–$100K</span>{" "}
-                Investment Portfolio
-              </span>
-              <span className="mt-2 block md:mt-3">
-                Using Proven Wall Street Research Frameworks
-              </span>
-            </h1>
-          </div>
+  {/* 超宽屏：单行版本 */}
+  <h1 className="hidden 2xl:block mx-auto max-w-[1700px] font-serif tracking-[-0.01em] text-[#1F1F1F]">
+
+    {/* ① 主部分（放大1.6倍） */}
+    <span className="font-semibold text-[4.6rem] leading-[1.08]">
+      Learn How To Build Your First{" "}
+      <span className="text-[#C9A24E] whitespace-nowrap">$10K–$100K</span>{" "}
+      Investment Portfolio
+    </span>
+
+    {/* ② 副部分（保持对比） */}
+    <span className="block mt-4 text-[2.6rem] text-[#2A2A2A]">
+  Using Proven Wall Street Research Frameworks
+</span>
+
+  </h1>
+
+  {/* 普通桌面 / 非全屏 / 手机：双行版本 */}
+  <h1 className="2xl:hidden mx-auto max-w-[1400px] font-serif tracking-[-0.01em] text-[#1F1F1F]">
+
+    {/* ① 主标题 */}
+    <span className="block font-semibold text-[1.25rem] leading-[1.25] md:text-[2.4rem] md:leading-[1.18] xl:text-[2.7rem]">
+      Learn How To Build Your First{" "}
+      <span className="text-[#C9A24E] md:whitespace-nowrap">$10K–$100K</span>{" "}
+      Investment Portfolio
+    </span>
+
+    {/* ② 副标题 */}
+    <span className="block mt-3 md:mt-4 text-[1.05rem] leading-[1.3] md:text-[1.6rem] xl:text-[1.8rem] text-[#2A2A2A]">
+      Using Proven Wall Street Research Frameworks
+    </span>
+
+  </h1>
+
+</div>
 
 <p className="mx-auto mt-4 max-w-2xl text-sm leading-6 text-[#6F6A66] md:mt-5 md:max-w-3xl md:text-lg md:leading-8 md:whitespace-nowrap">
   Even if you feel confused about money and
@@ -60,9 +77,9 @@ export function HeroSection({ onApplyClick }: HeroSectionProps) {
 </p>
 
 <p className="mx-auto mt-2 max-w-2xl text-sm leading-6 text-[#6F6A66] md:mt-3 md:max-w-3xl md:text-lg md:leading-8 md:whitespace-nowrap">
-  This is for women who are ready to build real financial confidence
+  This is for women who are ready to build
   <br className="block md:hidden" />
-  and take control of their future.
+   real financial confidence and take control of their future.
 </p>
         </div>
 
