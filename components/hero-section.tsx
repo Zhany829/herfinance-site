@@ -63,19 +63,18 @@ export function HeroSection({ onApplyClick }: HeroSectionProps) {
         </div>
 
         {/* Video */}
-        <div className="mx-auto mt-6 max-w-4xl rounded-[20px] border border-[#EEE7E1] bg-white p-2 shadow-[0_8px_28px_rgba(31,31,31,0.05)] md:mt-8 md:rounded-[24px] md:p-3">
-          <div className="relative aspect-video overflow-hidden rounded-[14px] bg-[#EFE7E0] md:rounded-[18px]">
-            <img
-              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1600&auto=format&fit=crop"
-              alt="HerFinance training video"
-              className="h-full w-full object-cover"
-            />
-            <div className="absolute inset-0 bg-black/5" />
-            <button className="absolute left-1/2 top-1/2 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-[#E8B4B8]/90 text-white shadow-lg transition hover:scale-105 md:h-24 md:w-24">
-              <Play className="ml-0.5 h-6 w-6 fill-current md:ml-1 md:h-10 md:w-10" />
-            </button>
-          </div>
-        </div>
+
+<div className="mx-auto mt-6 max-w-4xl rounded-[20px] border border-[#EEE7E1] bg-white p-2 shadow-[0_8px_28px_rgba(31,31,31,0.05)] md:mt-8 md:rounded-[24px] md:p-3">
+  <div className="relative aspect-video overflow-hidden rounded-[14px] md:rounded-[18px]">
+    <iframe
+  src="https://www.youtube.com/embed/J5O4k1ERSAk?rel=0&modestbranding=1&vq=hd720"
+  title="HerFinance Video"
+  className="h-full w-full"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+/>
+  </div>
+</div>
 
         {/* CTA under video */}
         <div className="mt-7 text-center">
