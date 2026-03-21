@@ -55,7 +55,7 @@ export function HeroSection({ onApplyClick }: HeroSectionProps) {
   <h1 className="2xl:hidden mx-auto max-w-[1400px] font-serif tracking-[-0.01em] text-[#1F1F1F]">
 
     {/* ① 主标题 */}
-    <span className="block font-semibold text-[1.7rem] leading-[1.25] md:text-[2.4rem] md:leading-[1.18] xl:text-[2.7rem]">
+    <span className="block font-semibold text-[2.5rem] leading-[1.25] md:text-[2.4rem] md:leading-[1.18] xl:text-[2.7rem]">
       Learn How To Build Your First{" "}
       <span className="text-[#C9A24E] md:whitespace-nowrap">$10K–$100K</span>{" "}
       Investment Portfolio
@@ -70,20 +70,16 @@ export function HeroSection({ onApplyClick }: HeroSectionProps) {
 
 </div>
 
-<p className="mx-auto mt-4 max-w-2xl text-sm leading-[1.4] text-[#6F6A66] md:mt-5 md:max-w-3xl md:text-lg md:leading-[1.6] text-center">
-
-  Even if you feel confused about money and{" "}
+<p className="mx-auto mt-4 max-w-2xl text-sm leading-6 text-[#6F6A66] md:mt-5 md:max-w-3xl md:text-lg md:leading-8 md:whitespace-nowrap">
+  Even if you feel confused about money and {" "}
   <br className="block md:hidden" />
-  don’t know where to start.
+   don’t know where to start.
+</p>
 
-  <br className="hidden md:block" />
-
-  <span className="md:whitespace-nowrap">
-    This is for women who are ready to build{" "}
-    <br className="block md:hidden" />
-    real financial confidence and take control of their future.
-  </span>
-
+<p className="mx-auto mt-2 max-w-2xl text-sm leading-6 text-[#6F6A66] md:mt-3 md:max-w-3xl md:text-lg md:leading-8 md:whitespace-nowrap">
+  This is for women who are ready to build
+  <br className="block md:hidden" />
+   real financial confidence and take control of their future.
 </p>
         </div>
 
@@ -91,7 +87,7 @@ export function HeroSection({ onApplyClick }: HeroSectionProps) {
 <div className="mx-auto mt-6 max-w-4xl rounded-[20px] border border-[#EEE7E1] bg-white p-2 shadow-[0_8px_28px_rgba(31,31,31,0.05)] md:mt-8 md:rounded-[24px] md:p-3">
   <div className="relative aspect-video overflow-hidden rounded-[14px] md:rounded-[18px]">
     <iframe
-  src="https://player.vimeo.com/video/1175680425?autoplay=1&muted=1&title=0&byline=0&portrait=0"     className="absolute top-0 left-0 h-full w-full"
+  src="https://player.vimeo.com/video/1175680425?autoplay=1&muted=0&title=0&byline=0&portrait=0"     className="absolute top-0 left-0 h-full w-full"
       allow="autoplay; fullscreen; picture-in-picture"
       allowFullScreen
     />
