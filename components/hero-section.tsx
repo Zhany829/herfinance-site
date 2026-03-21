@@ -97,7 +97,7 @@ export function HeroSection({ onApplyClick }: HeroSectionProps) {
   <h1 className="2xl:hidden mx-auto max-w-[1400px] font-serif tracking-[-0.01em] text-[#1F1F1F]">
 
     {/* ① 主标题 */}
-    <span className="block font-semibold text-[2.5rem] leading-[1.25] md:text-[2.4rem] md:leading-[1.18] xl:text-[2.7rem]">
+    <span className="block font-semibold text-[2.0rem] leading-[1.25] md:text-[2.4rem] md:leading-[1.18] xl:text-[2.7rem]">
       Learn How To Build Your First{" "}
       <span className="text-[#C9A24E] md:whitespace-nowrap">$10K–$100K</span>{" "}
       Investment Portfolio
