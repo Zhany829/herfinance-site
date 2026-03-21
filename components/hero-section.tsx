@@ -36,7 +36,7 @@ export function HeroSection({ onApplyClick }: HeroSectionProps) {
             {/* 超宽屏：单行版本 */}
             <h1 className="hidden 2xl:block mx-auto max-w-[1700px] font-serif text-[2.65rem] leading-[1.12] tracking-[-0.01em] text-[#1F1F1F]">
               Learn How To Build Your First{" "}
-              <span className="whitespace-nowrap text-[#C9A24E]">$10K–$100K</span>{" "}
+              <span className="text-[#C9A24E] md:whitespace-nowrap">$10K–$100K</span>{" "}
               Investment Portfolio Using Proven Wall Street Research Frameworks
             </h1>
 
@@ -44,7 +44,7 @@ export function HeroSection({ onApplyClick }: HeroSectionProps) {
             <h1 className="2xl:hidden mx-auto max-w-[1400px] font-serif text-[1.2rem] leading-[1.2] tracking-[-0.01em] text-[#1F1F1F] md:text-[2.2rem] md:leading-[1.16] xl:text-[2.45rem]">
               <span className="block">
                 Learn How To Build Your First{" "}
-                <span className="whitespace-nowrap text-[#C9A24E]">$10K–$100K</span>{" "}
+                <span className="text-[#C9A24E] md:whitespace-nowrap">$10K–$100K</span>{" "}
                 Investment Portfolio
               </span>
               <span className="mt-2 block md:mt-3">
@@ -53,9 +53,9 @@ export function HeroSection({ onApplyClick }: HeroSectionProps) {
             </h1>
           </div>
 
-          <p className="mx-auto mt-4 max-w-2xl text-sm leading-6 text-[#6F6A66] md:mt-5 md:max-w-3xl md:text-lg md:leading-8">
-            Even if you feel confused about money and don’t know where to start.
-          </p>
+<p className="mx-auto mt-4 max-w-full whitespace-nowrap text-sm leading-6 text-[#6F6A66] md:mt-5 md:max-w-3xl md:text-lg md:leading-8">
+  Even if you feel confused about money and don’t know where to start.
+</p>
 
 <p className="mx-auto mt-2 max-w-full whitespace-nowrap text-sm leading-6 text-[#6F6A66] md:mt-3 md:text-lg md:leading-8">
   This is for women who are ready to build real financial confidence and take control of their future.
@@ -63,16 +63,13 @@ export function HeroSection({ onApplyClick }: HeroSectionProps) {
         </div>
 
         {/* Video */}
-
-<div className="mx-auto mt-6 max-w-4xl rounded-[20px] border border-[#EEE7E1] bg-white p-2 shadow-[0_8px_28px_rgba(31,31,31,0.05)] md:mt-8 md:rounded-[24px] md:p-3">
-  <div className="relative aspect-video overflow-hidden rounded-[14px] md:rounded-[18px]">
+<div className="mx-auto mt-8 max-w-[360px] md:max-w-[420px]">
+  <div className="relative aspect-[9/16] overflow-hidden rounded-[18px]">
     <iframe
-  src="https://www.youtube.com/embed/J5O4k1ERSAk?rel=0&modestbranding=1&vq=hd720"
-  title="HerFinance Video"
-  className="h-full w-full"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowFullScreen
-/>
+      src="https://www.youtube.com/embed/J5O4k1ERSAk?rel=0&modestbranding=1"
+      className="h-full w-full"
+      allowFullScreen
+    />
   </div>
 </div>
 
