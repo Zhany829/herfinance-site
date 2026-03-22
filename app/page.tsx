@@ -8,6 +8,7 @@ import { PostScheduleContent } from "@/components/post-schedule-content"
 import { ProgramFitSection } from "@/components/program-fit-section"
 import { ProblemSection } from "@/components/problem-section"
 import { Footer } from "@/components/footer"
+import { track } from "@vercel/analytics"
 
 export type ApplicationData = {
   helpTopics: string[]
@@ -28,11 +29,15 @@ export default function Home() {
   const [applicationData, setApplicationData] = useState<Partial<ApplicationData>>({})
 
   const handleApplyClick = () => {
+    track("Entered Questionnaire")
     setStep("questionnaire")
   }
 
 const handleQuestionnaireComplete = async (data: any) => {
-
+  track("Submitted Questionnaire", {
+    budget: data.budget || "unknown",
+    helpTopicsCount: Array.isArray(data.helpTopics) ? data.helpTopics.length : 0,
+  })
   const message = `
 <b>New HerFinance Application</b>
 
@@ -80,6 +85,7 @@ formData.append(
   }
 
   setApplicationData(data)
+  track("Reached Calendar")
   setStep("calendar")
 }
 
@@ -104,7 +110,10 @@ formData.append(
         <CalendlyEmbed
           applicationData={applicationData}
           onBack={() => setStep("questionnaire")}
-          onScheduled={() => setStep("confirmed")}
+          onScheduled={() => {
+  track("Reached Confirmed")
+  setStep("confirmed")
+}}
         />
       )}
 
