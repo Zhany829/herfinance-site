@@ -394,7 +394,7 @@ export function QuestionnaireForm({
                 disabled={isNextDisabled()}
                 className="flex-1 rounded-full bg-[#C96A74] text-white shadow-[0_8px_20px_rgba(201,106,116,0.25)] transition hover:scale-[1.01] hover:bg-[#B85A64]"
               >
-                {currentStep === 6 ? "Book A Call" : "OK"}
+                {currentStep === 6 ? "Book A Call in the Next Page" : "OK"}
               </Button>
             </div>
 
