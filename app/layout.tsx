@@ -26,7 +26,7 @@ export const metadata: Metadata = {
         type: 'image/svg+xml',
       },
     ],
-    apple: '/favicon.jpg',
+    apple: '/apple-icon.png',
   },
 }
 
