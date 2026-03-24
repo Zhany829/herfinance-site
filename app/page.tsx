@@ -22,8 +22,8 @@ export type ApplicationData = {
   phone: string
 }
 
-export type AppStep = "home" | "questionnaire" | "calendar" | "confirmed"
-// export type AppStep = "home" | "calendar" | "confirmed"
+// export type AppStep = "home" | "questionnaire" | "calendar" | "confirmed"
+export type AppStep = "home" | "calendar" | "confirmed"
 
 export default function Home() {
   const [step, setStep] = useState<AppStep>("home")
@@ -31,8 +31,8 @@ export default function Home() {
 
   const handleApplyClick = () => {
     track("Entered Questionnaire")
-    // setStep("calendar")
-    setStep("questionnaire")
+    setStep("calendar")
+    // setStep("questionnaire")
   }
 
 const handleQuestionnaireComplete = async (data: any) => {
@@ -101,18 +101,18 @@ formData.append(
   </>
 )}
 
-      {step === "questionnaire" && (
+      {/* {step === "questionnaire" && (
         <QuestionnaireForm
           onComplete={handleQuestionnaireComplete}
           onBack={() => setStep("home")}
         />
-      )}
+      )} */}
 
       {step === "calendar" && (
         <CalendlyEmbed
           applicationData={applicationData}
-          onBack={() => setStep("questionnaire")}
-          // onBack={() => setStep("home")}
+          // onBack={() => setStep("questionnaire")}
+          onBack={() => setStep("home")}
           onScheduled={() => {
   track("Reached Confirmed")
   setStep("confirmed")
