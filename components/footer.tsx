@@ -4,7 +4,9 @@ export function Footer() {
       <p className="mb-4 font-serif text-lg text-foreground md:text-xl">
         HerFinance
       </p>
-
+      <p className="mt-6 text-[11px] text-muted-foreground md:text-xs">
+  © 2026 HerFinance Academy. All rights reserved.
+</p>
       <p className="mx-auto max-w-3xl text-[11px] leading-5 md:text-xs md:leading-6">
         HerFinance Academy provides financial education for informational purposes only.
         Nothing on this website should be considered financial or investment advice.
@@ -26,6 +28,7 @@ export function Footer() {
           Earnings Disclaimer
         </a>
       </div>
+
     </footer>
   )
 }

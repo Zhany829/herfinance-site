@@ -176,6 +176,37 @@ export function PostScheduleContent() {
     </div>
   </div>
 </div>
+{/* 3 Week Result Highlight */}
+<div className="mx-auto mt-14 max-w-[820px] text-center">
+  <h3 className="font-serif text-[34px] leading-tight text-[#171717] md:text-[50px]">
+    3 weeks in… just look at this.
+  </h3>
+
+  <div className="mx-auto mt-6 max-w-[720px] space-y-5 text-center text-[18px] leading-[1.7] text-[#1F1F1F] md:text-[22px]">
+    <p>
+      She came in with zero finance knowledge —
+      never invested, didn’t even know what ETFs were, had no idea where to start.
+    </p>
+
+    <p>
+      Now she’s screening stocks, breaking down companies, and understanding industries.
+    </p>
+
+    <p className="italic text-[#6F6A66]">
+      This is the difference between thinking about starting… and having a real system, guidance, and support.
+    </p>
+  </div>
+
+  <div className="mt-8 flex justify-center">
+    <div className="overflow-hidden rounded-[28px] border border-[#EEE7E1] bg-white shadow-[0_10px_40px_rgba(31,31,31,0.05)]">
+      <img
+        src="/result3.jpg"
+        alt="3 week student progress"
+        className="h-auto w-full max-w-[520px] object-cover"
+      />
+    </div>
+  </div>
+</div>
 
         </div>
       </div>
